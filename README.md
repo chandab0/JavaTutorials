@@ -1,3 +1,4 @@
+[JavaInterviewQuestions-UdemyCourse.pdf](https://github.com/chandab0/JavaTutorials/files/6543830/JavaInterviewQuestions-UdemyCourse.pdf)
 # Java Tutorials
 
 ## Common Algorithms & Data Structures
@@ -166,3 +167,5 @@ ArrayList grows by 50% of its current size. The increment is size is calculated 
 ### Growth of StringBuilder
 
 `StringBuilder` grows by the current size + additional 2 bytes. So, the new size would be (current size) * 2 + 2
+ 
+------------------------------ `Thanks to Saptarshi Basu` ---------------------------------------------------
