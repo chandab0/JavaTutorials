@@ -68,7 +68,6 @@
 ## Multi-Threading
 
 * java.lang.InheritableThreadLocal<T> extends ThreadLocal to provide inheritance of values in the child thread
-* java.lang.InheritableThreadLocal<T> extends ThreadLocal to provide inheritance of values in the child thread
 * 
 
 ## Streams
