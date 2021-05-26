@@ -1,6 +1,6 @@
 
 # Java Tutorials
-## useful Materials
+## Useful Materials
 * [JavaInterviewQuestions-UdemyCourse.pdf](https://github.com/chandab0/JavaTutorials/files/6543830/JavaInterviewQuestions-UdemyCourse.pdf)
 ## Common Algorithms & Data Structures
 
