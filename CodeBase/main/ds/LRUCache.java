@@ -1,3 +1,4 @@
+package main.ds;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -7,8 +8,10 @@ public class LRUCache {
 
     public LRUCache(final int cacheCapacity) {
         this.cache = new LinkedHashMap<Integer, Integer>(cacheCapacity, 100.0f, true) {
-            @Override
-            protected boolean removeEldestEntry(Map.Entry eldest) {
+			private static final long serialVersionUID = 1L;
+
+			@Override
+            protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
                 return size() > cacheCapacity;
             }
         };
