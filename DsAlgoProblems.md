@@ -6,4 +6,8 @@
   Test case:
   input=[1, 2, 3, 4] output =[24, 12, 8, 6]
   input= [-2, 10, -4] output =[-40, 8, -20]
-  * [Soulution :](https://github.com/chandab0/JavaTutorials/blob/main/CodeBase/main/array/FindProductExceptSelf.java)
+  * [Get solution](https://github.com/chandab0/JavaTutorials/blob/main/CodeBase/main/array/FindProductExceptSelf.java)
+
+## Implement LRU Cache
+  * [Get solution](https://github.com/chandab0/JavaTutorials/blob/main/CodeBase/main/ds/LRUCache.java)
+
