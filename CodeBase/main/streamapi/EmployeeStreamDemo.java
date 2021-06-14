@@ -83,6 +83,10 @@ public class EmployeeStreamDemo {
 		// and which department he belongs to?
 		method15();
 
+		System.out.println("\n");
+		// Query 15 : Who is the second highest earner?
+		method16();
+
 	}
 
 	public static void method1() {
@@ -274,6 +278,13 @@ public class EmployeeStreamDemo {
 		System.out.println("Age : "+oldestEmployee.getAge());
 		         
 		System.out.println("Department : "+oldestEmployee.getDepartment());
+	}
+
+	public static void method16() {
+		System.out.println(
+				"Query 16 : Who is the 2nd highest earner?");
+		Optional<Employee> secondHighestEarner = employeeList.stream().sorted((a, b) -> (int)(b.getSalary() - a.getSalary())).skip(1).findFirst();
+        System.out.println("Employee: "+secondHighestEarner.get().getName());
 	}
 
 }
