@@ -57,23 +57,18 @@ public class MergeTwoSortedList {
         SinglyLinkedListNode head = new SinglyLinkedListNode(0);
         SinglyLinkedListNode tail =  head;
         while(true){
-            if(head1==null){
-                if(head2==null)
-                    break;
-                else{
+            if(head1==null){                
                     tail.next = head2;
-                    head2 =  head2.next;
-                }    
-                    
+                    head2 =  head2.next;                
+                if(head2==null)
+                    break;                                     
             }
-            else if(head2==null){
-                
-                if(head1==null)
-                    break;
-                else{
+            else if(head2==null){                                
                     tail.next = head1;
-                    head1 = head1.next;
-                }    
+                    head1 = head1.next;                
+                if(head1==null){
+                    break;
+                }   
             }
             else if(head1.data<=head2.data){
                 tail.next = head1;
