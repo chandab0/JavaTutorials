@@ -3,7 +3,7 @@
 ## Useful Materials
 * [JavaInterviewQuestions-UdemyCourse.pdf](https://github.com/chandab0/JavaTutorials/files/6543830/JavaInterviewQuestions-UdemyCourse.pdf)
 ## DS Algo problems
-* [check for details](https://github.com/chandab0/JavaTutorials/blob/main/DsAlgoProblems.md)
+* [check for more details](https://github.com/chandab0/JavaTutorials/blob/main/DsAlgoProblems.md)
 ## Common Algorithms & Data Structures
 
 * Trie - common use cases include autocomplete or typeahead, where based on an input prefix string, a list of possible values are returned
