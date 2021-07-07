@@ -59,8 +59,6 @@ class SortArrayByIncreasingFrequency {
         int index = 0;
         for(Map.Entry<Integer, List<Integer>> entry : tree.entrySet()){
             List<Integer> valueList =entry.getValue();
-            if(valueList.size()>1)
-                Collections.sort(valueList, (a,b) -> b.compareTo(a));
             for(int i=0; i<valueList.size(); i++)
                 for(int j=0; j<entry.getKey(); j++){
                     result[index++] = valueList.get(i);
