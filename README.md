@@ -125,7 +125,7 @@ String result = (String) m.invoke("Hello", 1, 3); // "el"
 
 For more details, see the [Java Reflection API documentation](https://docs.oracle.com/javase/tutorial/reflect/).
 
-**See also:** [Reflection code examples folder](./reflection/ReflectionTutorial.java)
+**See also:** [Reflection code examples folder](reflection/ReflectionTutorial.java)
 
 ## Streams
 
