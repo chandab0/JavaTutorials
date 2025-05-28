@@ -125,6 +125,8 @@ String result = (String) m.invoke("Hello", 1, 3); // "el"
 
 For more details, see the [Java Reflection API documentation](https://docs.oracle.com/javase/tutorial/reflect/).
 
+**See also:** [Reflection code examples folder](./reflection/)
+
 ## Streams
 
 * Stream.Builder<T> is used to build a stream by adding one element at a time without the overhead of using an ArrayList as a buffer
