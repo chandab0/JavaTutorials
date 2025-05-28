@@ -71,6 +71,59 @@
 
 * java.lang.InheritableThreadLocal<T> extends ThreadLocal to provide inheritance of values in the child thread
 * 
+### Reflection in Java
+
+Reflection is a feature in Java that allows inspection and modification of classes, methods, fields, and constructors at runtime. It is part of the `java.lang.reflect` package.
+
+#### Common Use Cases
+
+- Inspecting class structure (fields, methods, constructors)
+- Instantiating objects dynamically
+- Accessing private fields and methods
+- Implementing frameworks, dependency injection, and serialization libraries
+
+#### Basic Examples
+
+**Get Class Object:**
+```java
+Class<?> clazz = Class.forName("java.util.ArrayList");
+// or
+ArrayList<String> list = new ArrayList<>();
+Class<?> clazz2 = list.getClass();
+```
+
+**List All Methods:**
+```java
+for (Method method : clazz.getDeclaredMethods()) {
+    System.out.println(method.getName());
+}
+```
+
+**Access Private Field:**
+```java
+class Person {
+    private String name = "John";
+}
+
+Person p = new Person();
+Field field = p.getClass().getDeclaredField("name");
+field.setAccessible(true);
+System.out.println(field.get(p)); // prints "John"
+```
+
+**Invoke Method Dynamically:**
+```java
+Method m = String.class.getMethod("substring", int.class, int.class);
+String result = (String) m.invoke("Hello", 1, 3); // "el"
+```
+
+#### Notes
+
+- Reflection can break encapsulation and should be used carefully.
+- It may have performance overhead.
+- Accessing private members may require `setAccessible(true)` and can be restricted by security managers.
+
+For more details, see the [Java Reflection API documentation](https://docs.oracle.com/javase/tutorial/reflect/).
 
 ## Streams
 
